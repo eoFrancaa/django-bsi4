@@ -15,3 +15,5 @@ class ProdutoViewSet(ModelViewSet):
     ordering_fields = ("nome", "preco")
     ordering = ("id",)
     search_fields = ("nome",)
+    ordering_fields = ("nome", "preco", "marca", "estoque", "descricao")
+    search_fields = ("nome", "marca", "descricao")
